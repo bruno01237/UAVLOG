@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Gráficos teste retificador</title>
+	
+	
+		<!-- Estilo das div -->
+	<style type="text/css">
+		#container {
+			height: 400px;
+			width: 1000px;
+			padding-top: 0%;
+			position:relative;
+			left: 15%;
+			font-family:Arial;
+			font-size: 15px;
+		}
+		#h2{
+			left: 20%;
+		}
+
+		iframe {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<center><h1>Análise da temperatura do retificador</h1></center>
+		
+		<!-- Tabela -->
+		<div id="container">	
+				<br>
+			<p1>Devido ao grande número de queimas da ponte retificadora, sendo a principal causa o superaquecimento no componente. Os testes começaram a partir da mudança na pasta termica substituindo a implastec pela Cooler Master Cryofuse. E em um segundo momento vai ser testado o cooler box AMD.</p1>
+				<br>
+				<br>
+				<center><h2>Tabela com a variação dos fatores em cada teste</h2></center>
+			<img src="Tabela.png" height="223" width="829"frameBorder="0"
+			position="center">
+			
+		
+		</div>
+				
+		<!-- Primeiro gráfico temp máxima-->	
+		<div id="container">
+			<iframe height="1000" width="1200"frameBorder="0"
+			position="center"
+			src="./temp_maxima_dos_testes.html">	
+			</iframe>
+		</div>
+
+		<!-- Segundo gráfico temp média-->	
+		<div id="container">
+			<iframe height="1000" width="1200"frameBorder="0"
+			position="center"
+			src="./temp_media_dos_testes.html">	
+			</iframe>
+		</div>
+		<br>
+		<br>
+		
+
+<!-- Terceiro gráfico temp média-->	
+<div id="container">
+	<iframe height="1000" width="1200"frameBorder="0"
+	position="center"
+	src="./Curva_aumento_temperatura_cooler_ligado.html">	
+	</iframe>
+</div>
+
+		
+<!-- Quarto gráfico temp média-->	
+<div id="container">
+<iframe height="1000" width="1200"frameBorder="0"
+position="center"
+src="./Curva_aumento_temperatura_cooler_desligado.html">	
+</iframe>
+</div>
+
+<!-- Quinto gráfico temp média-->	
+<div id="container">
+<iframe height="1000" width="1200"frameBorder="0"
+position="center"
+src="./Temperatura_media_e_maxima_cooler_dissipador_padrão.html">	
+</iframe>
+</div>
+
+<!-- Sexto gráfico temp média-->	
+<div id="container">
+<iframe height="1000" width="1200"frameBorder="0"
+position="center"
+src="./Temperatura_media_e_maxima_cooler_dissipador_amd.html">	
+</iframe>
+</div>
+<!-- Notas-->
+<div id="container">	
+	<br>
+<p1><b>Observação:</b> O teste 3 foi repetido (teste3_v2), pois o gerador estava invertendo muito a curva (47.7v a 48.2v, até os 5 minutos de voo). O teste4_v2 foi feito para se obter mais dados com a pasta térmica, cooler master + cooler(AMD).</p1>
+	<br>
+	<br>
+<p2><b>Conclusões preliminares</b>: O melhor cénario foi com a pasta térmica coler master (cryofuze) + cooler AMD ligado, porém esse setup implica em partes moveis(cooler) com um risco de quebra. Por esse motivo é mais interessante usar a pasta térmica da cooler master (14w/mk) a implastec (0.4w/mk) e o manter em um primeiro momento o dissipador padrão do modelo HS 4262-120. Esse dissipador tem um grande ponto negativo, pois a sua superficie fica apenas 80% em contato com a ponte retificadora, devido a um rasco que existe nele de ponta a ponta. )</p2>	<br>
+	<br>
+<p3><b>Sugestões: </b>Repetir os teste 3 e 4 em um outro drone, após mudar o dissipador de modo que ele encoste 100% na ponte retificadora, e em outro momento é interesante testa o thermal pad Gelid GP-Ultimate com 15 W/mk, pois o seu custo é proporcionalmente menor e mais fácil de aplicar).</p3>	<br>
+	<br>
+
+</div>
+			
+	</main>
+</body>
+</html>
