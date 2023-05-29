@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Gráficos teste retificador</title>
+	
+	
+		<!-- Estilo das div -->
+	<style type="text/css">
+		#container {
+			height: 400px;
+			width: 1000px;
+			padding-top: 0%;
+			position:relative;
+			left: 15%;
+			font-family:Arial;
+			font-size: 15px;
+		}
+		#h2{
+			left: 20%;
+		}
+
+		iframe {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<center><h1>Bateria GYE(F30) Vs. GENS ACE(H12)</h1></center>
+		
+		<!-- Tabela -->
+		<div id="container">	
+				<br>
+			<p1>Por conta do da bateria do drone F30 não ter conseguido entregar a quantidade de energia solicitada pelo drone, após o gerador morrer em voo. Foi necessario estudar a curva de descarga, para entender mais sobre ela e aproveitando para comparar com a GENS ACE</p1>
+				<br>
+				<br>
+				<center><h2>Gráficos mostrando a curva de tensão da bateria, com uma carga de um motor T-motor F-90 KV1300, consumindo 20A</h2></center>
+			<img src="Tabela.png" height="200" width="829"frameBorder="0"
+			position="center">
+			
+		
+		</div>
+				
+		<!-- Primeiro gráfico GYE-->	
+		<div id="container">
+			<iframe height="1000" width="1200"frameBorder="0"
+			position="center"
+			src="./Graficodescarga_GYE.html">	
+			</iframe>
+		</div>
+
+		<!-- Segundo gráfico GENS-->	
+		<div id="container">
+			<iframe height="1000" width="1200"frameBorder="0"
+			position="center"
+			src="./Graficodescarga_gens.html">	
+			</iframe>
+		</div>
+		<br>
+		<br>
+		
+
+
+</body>
+</html>
